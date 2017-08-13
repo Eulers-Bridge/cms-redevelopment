@@ -1,0 +1,33 @@
+	aside {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 320px;
+		height: 100vh;
+		background-color: #E8E8EB;
+		z-index: 0;
+	}
+	
+	aside section {
+		background-color: none;
+		width: 100%;
+		margin-bottom: 12px;
+		padding-bottom: 12px;
+		padding-left: 24px;
+	}
+	
+	aside .welcome {
+		color: white;
+		width: 100%;
+		background-color: #6B7A8A;
+		padding-top: 100px;
+	}
+		
+	aside a {
+		margin-left: 12px;
+		border-top: 1px solid #333;
+	}
+		
+	aside a:last-child{
+		border-bottom: 1px solid #333;
+	}

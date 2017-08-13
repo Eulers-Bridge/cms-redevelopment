@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>UI Modules</title>
+		<style type="text/css" media="screen">
+			body {
+				font-family: Helvetica, sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+			
+			#container {
+				width: 90%;
+				margin: auto;
+			}
+			
+			.module {
+				background-color: blue;
+				flex_direction: column;
+				margin-bottom: 12px;
+			}
+			
+			.module.gallery {
+				background-color: olive;
+				align-items: center;
+			}
+			
+			.module, .module_tag, .module_title {
+				display: flex;
+			}
+			
+			.module_profile, .module_photo {
+				background-color: yellow;
+				flex: 1;
+			}
+			
+			.module_photo {
+				min-height: 180px;
+			}
+			
+			.module_body {
+				flex: 3;
+			}
+			
+			.module_tag {
+				align_items: center;
+			}
+			
+			.module_title {
+				background-color: red;
+				align-items: center;
+			}
+			
+			.module h3 {
+				margin-right: auto;
+			}
+			
+			.module small {
+				margin-left: auto;
+			}
+			
+			.module em {
+				text-decoration: none;
+				font-style: normal;
+				font-weight: bold;
+				margin-right: 12px;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<div id="container">
+		<section class="module text">
+			<div class="module_profile"></div>
+			<div class="module_body">
+				<div class="module_title">
+					<h3>Header</h3>
+					<button>Edit</button>
+					<button>Delete</button>
+				</div>
+				<div class="module_tag"
+					<h6>Added by Drew Smith</h6>
+					<small><em>News Article</em>500 Words</small>
+				</div>
+			</div>
+		</section>
+		
+		<section class="module gallery">
+			<div class="module_photo"></div>
+			<div class="module_body">
+				<div class="module_title">
+					<h3>Photo Module</h3>
+					<button>Edit</button>
+					<button>Delete</button>
+				</div>
+				<div class="module_tag"
+					<h6>Added by Drew Smith</h6>
+					<small><em>News Article</em>500 Words</small>
+				</div>
+			</div>
+		</section>
+		</div>
+		
+	</body>
+</html>
