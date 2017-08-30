@@ -1,0 +1,275 @@
+/* 	Isegoria CMS Typography Toolkit */
+
+body {
+    font-family: Helvetica Neue, -apple-system, sans-serif;
+    font-size: 16px;
+    font-size: 1em;
+    line-height: 1.25em;
+    color: #252525;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    -webkit-font-kerning: normal;
+    -moz-font-kerning: normal;
+    font-kerning: normal;
+}
+.navigation {
+    background-color: #252525;
+}
+h1 {
+    font-size: 2.4em;
+    line-height: 1.10em;
+    font-weight: 500;
+}
+h2 {
+    font-size: 1.5em;
+    line-height: 1.25em;
+    font-weight: 300;
+}
+h3 {
+    font-size: 1.3em;
+    line-height: 1.25em;
+    font-weight: 500;
+    color: #252525;
+}
+h4 {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+h5 {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    font-weight: 500;
+    color: #252525;
+}
+h6 {
+    font-size: 0.96em;
+    line-height: 1.5em;
+    font-weight: 500;
+}
+small {
+    font-size: 0.8em;
+    line-height: 1.6em;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #6B7A8A;
+}
+small em {
+    font-weight: 500;
+    margin-left: 6px;
+    margin-right: 6px;
+    color: #252525;
+}
+quote {
+    font-style: italic;
+    color: blue;
+    font-weight: 500;
+}
+a {
+    color: blue;
+}
+nav h4,
+nav a {
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+aside a,
+aside h6 {
+    line-height: 2em;
+    display: block;
+    text-decoration: none;
+}
+aside h6 {
+    color: #6B7A8A;
+    text-transform: uppercase;
+}
+aside a {
+    font-size: 0.96em;
+    color: #252525;
+    margin-left: 12px;
+    border-top: 1px solid #C7C7CC;
+    font-weight: 500;
+}
+aside a:active {} aside a:last-child {
+    border-bottom: 1px solid #C7C7CC;
+}
+/*	Additional UI Styling.	*/
+
+.management_bar button,
+.module button {
+    background-color: white;
+    border: 2px solid #4A90E2;
+    border-radius: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+/* 	Isegoria CMS UIKit */
+
+.UI {
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.UI.button {
+    cursor: pointer;
+    min-width: 80px;
+    min-height: 44px;
+    border-radius: 8px;
+    border: 2px solid;
+    padding: 8px;
+}
+.UI.button.inline {
+    border: none;
+    min-width: auto;
+    min-height: 24px;
+    text-decoration: underline;
+    font-size: 0.9em;
+}
+.UI.button.mini {
+    min-width: 70px;
+    min-height: 36px;
+    font-size: 0.9em;
+}
+.UI.button.tag {
+    border: none;
+    background-color: white;
+    min-width: 70px;
+    min-height: 36px;
+    border-radius: 100px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    -webkit-transition: 0.1s ease-in-out;
+}
+.UI.button.tag:active {
+    border: none;
+    background-color: white;
+    -webkit-transition: 0.1s ease-in-out;
+    -webkit-transform: scale(1.1);
+    color: rgb(30, 120, 240);
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.4);
+}
+.UI.search {
+    border: 2px solid #6B7A8A;
+    background-color: white;
+    min-width: 70px;
+    min-height: 36px;
+    border-radius: 100px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.UI.segment {
+    display: flex;
+    flex-grow: 1;
+    max-width: 600px;
+    margin: auto;
+    padding: auto;
+    background-color: none;
+    font-size: 0.9em;
+    /* border: 1px solid rgba(0,0,0,0.2); */
+}
+.UI.segment input[type="radio"] {
+    width: 0px;
+    height: 0px;
+    display: none;
+}
+.UI.segment label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: none;
+    border: 2px solid #167EFB;
+    color: #167EFB;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0px;
+    height: 36px;
+    margin-right: -2px;
+    /* To correct border radius being a little thicker on the left and right */
+    
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.UI.segment label {} .UI.segment label:hover {} .UI.segment label:active,
+.UI.segment label.active {
+    background-color: #167EFB;
+    color: white;
+}
+.UI.segment label:disabled,
+.UI.segment label.disabled {
+    background-color: aqua;
+    cursor: default;
+    color: white;
+}
+.UI.segment label:first-of-type {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.UI.segment label:last-of-type {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.UI.segment input:checked + label,
+.UI.segment label.selected {
+    background-color: #167EFB;
+    color: white;
+}
+.UI.segment input:disabled + label {
+    background-color: aqua;
+    cursor: default;
+    color: white;
+}
+/* ---------------- */
+
+.blue {
+    border: 2px solid #167EFB;
+    color: #167EFB;
+    background-color: white;
+}
+.blue:active {
+    color: white;
+    border: 2px solid #167EFB;
+    background-color: #167EFB;
+}
+.grey {
+    border: 2px solid #6B7A8A;
+    color: #6B7A8A;
+    background-color: white;
+}
+.grey:active {
+    border: 2px solid #6B7A8A;
+    color: white;
+    background-color: #6B7A8A;
+}
+.grey:hover {
+    border: 2px solid #6B7A8A;
+    color: white;
+    background-color: #6B7A8A;
+}
+.red {
+    border: 2px solid red;
+    color: red;
+    background-color: white;
+}
+.red:active {
+    border: 2px solid red;
+    color: white;
+    background-color: red;
+}
+.green {
+    border: 2px solid #14B54A;
+    color: #14B54A;
+    background-color: white;
+}
+.green:active {
+    border: 2px solid #14B54A;
+    color: white;
+    background-color: #14B54A;
+}

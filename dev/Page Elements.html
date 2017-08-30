@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Isegoria CMS — Page Elements Development</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="style2.css" />
+<style type="text/css" media="screen">
+	body {
+	    padding: 20px;
+	    padding-top: 100px;
+	}
+</style>
+	</head>
+	<body>
+		
+	<!-- UI Navigation -->
+	<nav class="UI navigation" role="navigation">
+		<a href="/test/">University of Western Australia</a>
+		<img href="/test/" alt="Back" src="assets/nav/back.png" srcset="assets/nav/back@2x.png 2x"><a>Back</a></img>
+		<img href="/test/" alt="Create" src="assets/nav/plus.png" srcset="assets/nav/plus@2x.png 2x"><a>Create</a></img>
+		<a class="title"><h4>News Articles</h4></a>
+		<img href="/test/" alt="Activity" src="assets/nav/activity.png" srcset="assets/nav/activity@2x.png 2x"></img>
+		<img href="/test/" alt="Create" src="assets/nav/notifications.png" srcset="assets/nav/notifications@2x.png 2x"></img>
+		<img href="/test/" alt="Create" src="assets/nav/logoff.png" srcset="assets/nav/logoff@2x.png 2x"></img>
+	</nav>
+
+	<!-- To group page and module elements together. -->
+	<div class="content_container">
+		
+		
+	<!-- UI Separator -->
+	<div class="UI separator header">
+		<h3 style="float:left;margin:0;padding:0;padding-bottom:8px">Header Text</h3>
+		<a style="float:right;margin:0;padding:0;"><img src="Plus@2x.png" alt="Icon" width="32" height="32" />Icon</a>
+		<hr noshade style="clear:both;">
+	</div>
+
+	<div class="UI separator group" style="width:100%;">
+		<h3 style="float:left;margin:0;padding:0;width:15%;">Header Text  </h3>
+		<hr noshade style="float:left;width:85%">
+		<hr noshade style="clear:both;border:none;">
+	</div>
+
+	<!-- UI Mapview -->
+	<div class="UI mapview">
+		<div class="map description">
+			<h3>Melbourne Central</h3>
+			<h5>Shopping Centre</h5>
+			<hr noshade>
+			<p>20 Palo Alto Rd, California<br>
+				USA 60642
+			</p>
+		</div>
+		<div class="map tile">
+		</div>
+	</div>
+
+	<!-- UI Message -->
+	<div class="UI message">
+		<div class="container basic">
+			<h3>Nothing Here!</h3>
+			<h5>Use the options above to add some content. You can also use the mobile app and upload a new photo or story.</h5>
+		</div>	
+	</div>
+	
+
+	<!-- UI Menu Bar -->
+	<header class="UI menubar">
+		<div class="item filter">
+			<button class="UI button mini blue" ontouchstart="" name="Button">Filter</button>
+		</div>
+				
+		<nav class="UI segment" ontouchstart="">
+			<input type="radio" name="seg-1" value="Online" id="example1">
+			<label for="example1">Online</label>
+			<input type="radio" name="seg-1" value="Submitted" id="example2">
+			<label for="example2">Submitted</label>
+		</nav>
+				
+		<div class="item search">
+			<input type=search results=5></input>
+		</div>		
+	</header>
+	
+	<!-- UI Module for Text -->
+	<section class="UI module text">
+		<div class="module_body">
+			<div class="module_title">
+			<h3>Become a Student Mentor in 2017</h3>
+				<button class="UI button inline blue" ontouchstart="" name="Button">Edit</button>
+				<button class="UI button inline error" ontouchstart="" name="Button">Delete</button>
+			</div>
+			<ul>
+				<li><strong>Added by Drew Smith</strong></li>
+				<li>12th August 2017</li>
+				<li style=""><small>12 Pictures</small></li>
+				<li style=""><mark>Photo Gallery</mark></li>
+			</ul>
+		</div>
+	</section>
+	
+	<!-- UI Module for Photos -->
+	<section class="UI module gallery">
+		<div class="module_photo">
+			<img src="resources/img.jpg" width="96px" height="96px">
+		</div>
+		<div class="module_body">
+			<div class="module_title">
+				<h3>Photos from the Beach</h3>
+				<button class="UI button inline blue" ontouchstart="" name="Button">Edit</button>
+				<button class="UI button inline error" ontouchstart="" name="Button">Delete</button>
+			</div>
+			<ul>
+				<li><strong>Added by Drew Smith</strong></li>
+				<li>12th August 2017</li>
+				<li style=""><small>12 Pictures</small></li>
+				<li style=""><mark>Photo Gallery</mark></li>
+			</ul>
+
+		</div>
+	</section>
+	
+	<!-- UI Module for System -->
+	<section class="UI module system">
+		<div class="module_body">
+			<div class="module_title">
+			<h3>Become a Student Mentor in 2017</h3>
+				<button class="UI button inline blue" ontouchstart="" name="Button">Edit</button>
+				<button class="UI button inline error" ontouchstart="" name="Button">Delete</button>
+			</div>
+			<ul>
+				<li><strong>Added by Drew Smith</strong></li>
+				<li>12th August 2017</li>
+				<li style=""><small>12 Pictures</small></li>
+				<li style=""><mark>Photo Gallery</mark></li>
+			</ul>
+
+		</div>
+	</section>
+	
+	
+	<!-- UI Paragraph Styling -->
+	<h3>Subheading goes here.</h3>
+	<p>
+	Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+	</p>
+	<quote>
+	"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+	</quote>
+	<p>
+	If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+	</p>
+
+	<!-- UI NavGroup -->
+	
+	<!-- UI Indented Form -->
+
+
+
+	
+	<!-- To group page and module elements together. -->
+	</div>
+
+	<!-- UI Sidebar -->
+	<aside id="sidebar">
+		<section class="welcome">
+			<header>News Feed</header>
+		</section>
+		<section><header>
+			<h6>News Feed</h6>
+		</header>
+			<a href="/test/">Articles</a>
+			<a href="/test/">Photos</a>
+			<a href="/test/">Events</a>
+		</section>
+		<section><header>
+			<h6>Election</h6>
+		</header>
+			<a href="/test/">Election Details</a>
+			<a href="/test/">Edit Positions</a>
+			<a href="/test/">Other Section</a>
+		</section>
+		<section><header>
+			<h6>Tools</h6>
+		</header>
+			<a href="/test/">Post Settings</a>
+			<a href="/test/">Block Lists</a>
+			<a href="/test/">Analytics</a>
+		</section>	
+	</aside>
+
+		
+	</body>
+</html>

@@ -8,7 +8,7 @@
 		-o-font-smoothing: antialiased;
 		font-smoothing: antialiased;
 		font-family: Helvetica Neue, -apple-system, sans-serif;
-		font-size: 16px;
+		font-size: 18px;
 		font-size: 1em;
 		line-height: 1.25em;
 		color: #252525;
@@ -28,14 +28,18 @@
 		font-size: 2.4em;
 		line-height: 1.10em;
 		font-weight: 300;
+		font-family: "MuseoSansRounded";
 	}
 	h2 {
-		font-size: 1.5em;
-		line-height: 1.5em;
+		font-size: 1.4em;
+		line-height: 1.25em;
+		font-weight: 500;
+		font-family: "MuseoSansRounded";
+		color: rgba(255,255,255,0.8);
 	}
 	h3 {
 		font-size: 1.2em;
-		line-height: 1.5em;
+		line-height: 1.2em;
 		font-weight: 500;
 	}
 	h4 {
@@ -48,15 +52,19 @@
 		line-height: 1.5em;
 		font-weight: 400;
 		color: #6B7A8A;
+		font-style: italic;
 	}
 	h6 {
-		font-size: 1em;
-		line-height: 1.25em;
+		font-size: 0.9em;
+		line-height: 1.5em;
 		font-weight: 500;
 	}
 	small {} quote {
 		font-style: italic;
 		color: blue;
+	}
+	strong {
+		font-weight: 500;
 	}
 	ul {
 		list-style: none;
@@ -66,35 +74,8 @@
 		font-weight: 500;
 		color: #6B7A8A;
 	}
-	strong {
-		font-size: 1.75em;
-		font-weight: 300;
-	}	
-	.museo_text {
-		font-family: "MuseoSansRounded";
-	}	
-	.isegblue_text {
-		color: #4A90E2;
-	}
-	
-	.brightblue_text {
-		color: #167EFB;
-	}
-		
-	.navy_text {
-		color: #313E4D;
-	}
-	.charcoal_text {
-		color: #252525;
-	}
-	.bluegraytext {
-		color: #6B7A8A;
-	}
 	a {
 		text-decoration: none;
-	}
-	em {
-		color: #4A90E2;
 	}
 	hr {
 		border: 1px solid #D8D8D8;
@@ -113,51 +94,44 @@
 	/* 	Isegoria CMS UIKit */
 	.UI {
 		font-family: Helvetica Neue, Helvetica, sans-serif;
+		/*
+		font-weight: 500;
+		font-size: 1em;
+		*/
 		-webkit-user-select: none;
 		user-select: none;
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		font-weight: 500;
+		font-size: 0.9em;
 		cursor: pointer;
 
 	}
 	.UI.edit {
-		font-weight: 400;
-		color: #252525;
+		width: 100%;
 		min-height: 140px;
 		overflow: scroll;
+		font-size: 0.95em;
 		-webkit-appearance: none;
 		border-radius: 4px;
 		border: 1px solid #D8D8D8;
-		padding: 8px;
-		font-size: 0.9em;
+		padding: 16px;
+		margin-bottom: 16px;
 	}
 	.UI.edit.subheader {
 		min-height: 32px;
-		height: 36px;
+		height: 44px;
 		font-size: 1.2em;
 		-webkit-appearance: none;
 	}
-	
-	.UI.edit.header {
-		min-height: 36px;
-		height: 44px;
-		font-size: 1.5em;
-		-webkit-appearance: none;
-	}
-	
-	.row input, .row_label, .row nav {
-		margin: 12px;
-	}
-	
 	.UI.button {
 		display: inline-block;
 		line-height: 0px;
+		min-width: 64px;
+		max-width: 128px;
 		width: auto;
-		min-height: 36px;
 		height: 100%;
 		border-radius: 8px;
 		border: 2px solid;
-		font-size: 0.9em;
-		font-weight: 500;
 	}
 	
 	.UI.button.bar {
@@ -169,33 +143,20 @@
 		text-decoration: underline;
 	}
 	.UI.button.mini {
-		height: 32px;
-		font-size: small;
-		vertical-align: middle;
-		margin-bottom: 8px;
-		margin-left: 8px;
-	}
-	
-	.UI.button.icon {
-		min-height: 24px;
-		min-width: 24px;
 		padding: 0;
-		margin: 0;
-		width: 24px;
-		height: 24px;
+	}
+	.UI.button.icon {
+		min-width: 0;
+		min-height: 0;
+		width: 32px;
+		height: 32px;
 		border: 2px solid rgba(0,0,0,0.2);
 		border-radius: 100px;
+		margin: 2px;
 		margin-left: 16px;
 		background-position: center; 
-		background-repeat: no-repeat;
-		-webkit-transition: 0.1s ease-in-out;
+		background-repeat: no-repeat; 
 	}
-	
-	.UI.button.icon:hover {
-		border: 2px solid rgba(0,0,0,0);
-		-webkit-transition: 0.2s ease-in-out;
-	}
-
 	.icon.delete{
 		background-image: url(assets/Cross%20Glyph.png);
 	}
@@ -226,14 +187,18 @@
 	
 	.UI.segment {
 		display: flex;
+		width: 100%;
 		height: 36px;
-		font-size: 0.9em;
-		font-weight: 500; 
 	}
+	
+	.UI.segment.inline {
+	}
+	
 	.UI.segment input[type="radio"] {
 		width: 0px;
 		height: 0px;
 		display: none;
+
 	}
 	.UI.segment label {
 		color: #167EFB;
@@ -242,12 +207,14 @@
 		flex: 1;
 		display: flex;
 		align-items: center;
-		justify-content: center;
-		border: 2px solid #167EFB;
+		border: 2px solid;
 		border-left: 1px solid;
 		border-right: 1px solid;
 		border-radius: 0px;
+		white-space: nowrap;
+		overflow: hidden;
 	}
+	
 	.UI.segment label:first-of-type {
 		border-top-left-radius: 8px;
 		border-bottom-left-radius: 8px;
@@ -258,18 +225,15 @@
 		border-bottom-right-radius: 8px;
 		border-right: 2px solid;
 	}
-	.UI.segment label:hover {
-		text-decoration: underline;
-	} 
-	}
-	.UI.segment label:active {
+	.UI.segment label {} .UI.segment label:hover {} .UI.segment label:active,
+	.UI.segment label.active {
 		background-color: #167EFB;
 		color: white;
 	}
-	.UI.segment input:checked + label {
+	.UI.segment input:checked + label,
+	.UI.segment label.selected {
 		background-color: #167EFB;
 		color: white;
-		border: 2px solid #167EFB;
 	}
 /*
 	.UI.segment label:disabled,
@@ -398,6 +362,8 @@
 	}
 	.UI.separator {
 		margin-top: 32px;
+		margin-left: 16px;
+		margin-right: 16px;
 	}
 	.UI.separator.header {
 		margin-bottom: 16px;
@@ -481,51 +447,50 @@
 			.menubar {
 				width: 100%;
 				height: auto;
+				background-color: green;
 				display: flex;
 				flex-wrap: nowrap;
 				margin: 0 auto;
 				align-content: space-between;
-				justify-content: center;
+				justify-content: flex-start;
 			}
-			.menubar .menuitem {
+			.item {
 				height: auto;
 				margin: 8px;
 				width: auto;
 			}
 			
-			.menubar .menuitem:first-child {
+			.item:first-child {
 				margin-left: 0;
 			}
 			
-			.menubar .menuitem:last-child {
+			.item:last-child {
 				margin-right: 0;
 			}
 			
-			.menubar .menuitem.button {
-				flex: 1;
-				min-width: 64px;
-				max-width: 128px;
+			.item.button {
+				flex-shrink: 2;
 			}
 			
-			.menubar .menuitem.segmented {
-				flex: 4;
-				max-width: 400px;
-			}
-			
-			.menubar .menuitem.search {
-				flex: 2;
-				background-color: 0;
-				min-width: 64px;
-
-			}
-			.menubar .menuitem.search input {
+			.item.segmented {
 				min-width: 0;
+				flex: 1;
+				flex-shrink: 1;
+			}
+			
+			.item.search {
+				margin: auto;
+				background-color: 0;
+				flex: 1;
+			}
+			.item.search input {
 				width: 100%;
 				background-color: none;
+				min-width: 0px;
 				height: 36px;
 				border-radius: 100px;
 				-webkit-appearance: none;
-				border: 2px solid #D8D8D8;
+				border: 2px solid #167EFB;
 	}
 
 
@@ -573,14 +538,8 @@
 	/* 	-------------------- */
 	.content_container {
 		display: block;
-		margin-top:4em;
 		margin-left: 4em;
 		margin-right: 4em;
-	}
-	
-	.content_container.editpage {
-		margin-top: 0;
-
 	}
 	
 	/* 	----- UI Module Styling ----- */
@@ -588,10 +547,11 @@
 		width: 100%;
 		height: auto;
 		min-height: 140px;
-		background-color: none;
+		background-color: #F9F9F9;
 		display: flex;
 		align-items: center;
 		border-radius: 8px;
+		padding: 16px;
 	}
 	.module .media {
 		height: auto;
@@ -610,27 +570,6 @@
 		flex-direction: row;
 		flex: 1;
 	}
-	
-	.module .item {
-		margin: 0;
-		flex: 1;
-		margin: 8px;
-	}
-	.module .item:first-child {
-		margin-left: inherit;
-	}
-	.module .item:last-child {
-		margin-right: inherit;
-	}
-	.module .item h2 {
-	}
-	
-	.module .item img {
-		padding: 0;
-		margin: 2px;
-		vertical-align: middle;
-	}
-	
 	.module .description {
 		flex: 1;
 	}
@@ -652,7 +591,7 @@
 		margin-top: auto;
 	}
 	.module .context img,
-	.module h5 img, .UI.module.system img {
+	.module h5 img {
 		vertical-align: middle;
 		margin-right: 8px;
 		border-radius: 100px;
@@ -668,48 +607,7 @@
 		background-color: white;
 		border: 2px dashed #D8D8D8;
 		text-align: center;
-		padding: 16px;
 	}
-	
-	.UI.module.system {
-		min-height: 94px;
-		padding: 12px;
-		margin-bottom: 16px;
-		border: 2px solid #D8D8D8;
-		align-content: center;
-		align-items: center;
-
-	}
-	
-	.UI.module.field {
-		border-radius: 0px;
-		min-height: 0;
-		justify-content: flex-start;
-		align-items: baseline;
-		align-content: center;
-		margin-top: 16px;
-		margin-bottom: 16px;
-	}
-	
-	.UI.module.fieldsys {
-		border-radius: 0px;
-		min-height: 0;
-		justify-content: center;
-		flex-direction: column;
-		align-items: baseline;
-		margin-top: 16px;
-		margin-bottom: 16px;
-	}
-	
-	.UI.module.fieldsys .item {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		margin: 0;
-
-	}
-
-	
 	/* 			UI Module Basic & Gallery tweaks and UI changes */
 	.UI.module.basic,
 	.UI.module.gallery {

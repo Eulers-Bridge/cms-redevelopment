@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Isegoria UI Kit — Development</title>
+		<style type="text/css" media="screen">
+			body {
+				font-family: -apple-system, sans-serif;
+				padding: 0;
+				margin: 0;
+			}
+			
+			*, *:before, *:after {
+			  -webkit-box-sizing: border-box; 
+			  -moz-box-sizing: border-box; 
+			  box-sizing: border-box;
+			}
+			
+			.UI {
+				font-family: Helvetica Neue, Helvetica, sans-serif;
+				font-weight: 500;
+				font-size: 1em;
+				-webkit-user-select: none;
+				user-select: none;
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			}
+			
+			.UI.button {
+				min-width: 80px;
+				min-height: 44px;
+				border-radius: 8px;
+				border: 2px solid;
+			}
+
+			
+			.UI.button.inline {
+				border: none;
+				min-height: 36px;
+				text-decoration: underline;
+			}
+			
+			.UI.button.mini {
+				min-width: 70px;
+				min-height: 36px;
+			}
+			
+			.UI.button.tag {
+				border: none;
+				background-color: white;
+				min-width: 70px;
+				min-height: 36px;
+				border-radius: 100px;
+				box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+				-webkit-transition: 0.1s ease-in-out;
+			}
+			
+			.UI.button.tag:active {
+				border: none;
+				background-color: white;
+				-webkit-transition: 0.1s ease-in-out;
+				-webkit-transform: scale(1.1);
+				color: rgb(30, 120, 240);
+				box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.4);
+			}
+			
+			.UI.search {
+				border: 2px solid rgba(160, 160, 180, 1);
+				background-color: white;
+				min-width: 70px;
+				min-height: 36px;
+				border-radius: 100px;
+				box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+			}
+			
+			.UI.segment {
+				display: flex;
+				max-width: 500px;
+				margin: auto;
+				padding: 12px;
+				background-color: none;
+				border: 1px solid rgba(0,0,0,0.2);
+			}
+			
+			.UI.segment input[type="radio"] {
+			 	width: 0px;
+			 	height: 0px;
+			 	display: none;
+			}
+			
+			.UI.segment label {
+				flex: 1;
+				display: flex;
+				align-items: center;
+				flex-grow: 1;
+				justify-content: center;
+				vertical-align: middle;
+				background-color: none;
+				border: 2px solid #167EFB;
+				color: #167EFB;
+				text-align: center;
+				cursor: pointer;
+				border-radius: 0px;
+				height: 36px;
+				margin-right: -2px;
+				/* To correct border radius being a little thicker on the left and right */
+			}
+			
+			.UI.segment label {
+			}
+			
+			.UI.segment label:hover {
+			}
+			
+			.UI.segment label:active, .UI.segment label.active {
+			  background-color: #167EFB;
+			  color: white;
+			}
+			
+			.UI.segment label:disabled, .UI.segment label.disabled {
+			background-color: aqua;
+			  cursor: default;
+			  color: white;
+			}
+			
+			.UI.segment label:first-of-type {
+			  border-top-left-radius: 8px;
+			  border-bottom-left-radius: 8px;
+			}
+			.UI.segment label:last-of-type {
+			  border-top-right-radius: 8px;
+			  border-bottom-right-radius: 8px;
+			}
+			.UI.segment input:checked + label, .UI.segment label.selected {
+			background-color: #167EFB;
+			color: white;
+			
+			}
+			.UI.segment input:disabled + label {
+			  background-color: aqua;
+			    cursor: default;
+			  color: white;
+			}
+			
+			.blue {
+				border: 2px solid rgba(30, 120, 240, 1);
+				color: rgba(30, 120, 240, 1);
+				background-color: white;
+			}
+			
+			.blue:active {
+				border: 2px solid rgba(30, 120, 240, 1);
+				color: white;
+				background-color: rgba(30, 120, 240, 1);
+			}
+			
+			.grey {
+				border: 2px solid rgba(160, 160, 180, 1);
+				color: rgba(160, 160, 180, 1);
+				background-color: white;
+			}
+			
+			.grey:active {
+				border: 2px solid rgba(160, 160, 180, 1);
+				color: white;
+				background-color: rgba(160, 160, 180, 1);
+			}
+			
+			.error {
+				border: 2px solid red;
+				color: red;
+				background-color: white;
+			}
+			
+			.error:active {
+				border: 2px solid red;
+				color: white;
+				background-color: red;
+			}
+			
+			.success {
+				border: 2px solid rgb(20, 220, 80);
+				color: rgb(20, 220, 80);
+				background-color: white;
+			}
+			
+			.success:active {
+				border: 2px solid rgb(20, 220, 80);
+				color: white;
+				background-color: rgb(20, 220, 80);
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+	<button class="UI button regular blue" ontouchstart="" name="Button">UI Button</button>
+	<button class="UI button inline grey" ontouchstart="" name="Button">UI Button Nav</button>
+	<button class="UI button mini grey" ontouchstart="" name="Button">UI Button Mini</button>
+	<button class="UI button tag error" ontouchstart="" name="Button">UI Button Tag</button>
+	<button class="UI button mini error" ontouchstart="" name="Button">UI Button Error</button>
+	<button class="UI button mini success" ontouchstart="" name="Button">UI Button Success</button>
+	<input type="search" class="UI search" name="Search">UI_search</input>
+			<nav class="UI segment" ontouchstart="">
+			<input type="radio" name="seg-1" value="Organisation" id="seg-Organisation">
+			<label for="seg-Organisation">Organisation</label>
+			<input type="radio" name="seg-1" value="Users" id="seg-Users">
+			<label for="seg-Users">Users</label>
+			<input type="radio" name="seg-1" value="Units" id="seg-Units">
+			<label for="seg-Units">Units</label>
+			<input type="radio" name="seg-1" value="Tags" id="seg-Tags">
+			<label for="seg-Tags">Tags</label>
+		</nav>
+	
+	</body>
+</html>

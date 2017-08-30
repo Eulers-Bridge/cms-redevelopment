@@ -1,0 +1,354 @@
+	body {
+		margin: 0;
+		margin-left: 260px;
+		padding: 0;
+		z-index: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-font-smoothing: antialiased;
+		-o-font-smoothing: antialiased;
+		font-smoothing: antialiased;
+		font-family: Helvetica Neue, -apple-system, sans-serif;
+		font-size: 16px;
+		font-size: 1em;
+		line-height: 1.25em;
+		color: #252525;
+		-webkit-font-feature-settings: "kern" 1;
+		-moz-font-feature-settings: "kern" 1;
+		font-feature-settings: "kern" 1;
+	}
+	*,
+	*:before,
+	*:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	
+	/* ----- UI Typography Definitions ----- */
+
+	h1 {
+		font-size: 2.4em;
+		line-height: 1.10em;
+		font-weight: 300;
+	}
+	h2 {
+		font-size: 1.5em;
+		line-height: 1.10em;
+	}
+	h3 {
+		font-size: 1.2em;
+		line-height: 1.2em;
+		font-weight: 500;
+	}
+	h4 {
+		font-size: 1.1em;
+		line-height: 1.5em;
+		font-weight: 400;
+	}
+	h5 {
+		font-size: 1em;
+		line-height: 1.5em;
+		font-weight: 400;
+		color: #6B7A8A;
+	}
+	h6 {
+		font-size: 1em;
+		line-height: 1.25em;
+		font-weight: 500;
+	}
+	ul {
+		list-style: none;
+	}
+	li {
+		font-size: 0.9em;
+		font-weight: 500;
+	}
+	strong {
+		font-size: 1.75em;
+		font-weight: 300;
+	}	
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	/* ----- Basic UI Definitions ----- */
+
+	hr {
+		border: 1px solid #D8D8D8;
+	}
+	
+	/* ----- UI Colour Palette Definitions ----- */
+	
+	/* Blue */
+	.blue {
+		border: 2px solid #4A90E2;
+		color: #4A90E2;
+		background-color: white;
+	}
+	
+	.blue:active {
+		color: white;
+		border: 2px solid #4A90E2;
+		background-color: #4A90E2;
+	}
+	.blue:hover {
+		border: 2px solid #4A90E2;
+		color: white;
+		background-color: #4A90E2;
+	}	
+	/* Blue Segmented Definitions */
+	.segmented.blue:hover, .segmented.blue:active {	
+		background-color: white;
+		color: #4A90E2;
+	}
+	.segmented.blue label {
+		border: 2px solid;
+	}
+	.segmented.blue label:hover {
+		background-color: rgba(0,0,255,0.1);
+		color: inherit;
+		border-color: inherit;
+	}
+	.segmented.blue label:hover:first-of-type {
+		border-left-color: inherit;
+		border-color: inherit;
+	}
+	.segmented.blue label:hover:last-of-type {
+		border-right-color: inherit;
+		border-color: inherit;
+	}
+	.segmented.blue label:active {
+		background-color: #4A90E2;
+		color: white;
+		border-color: inherit;
+	}
+	.segmented.blue label:active:first-of-type {
+		border-right-color: inherit;
+		border-color: inherit;
+	}
+	.segmented.blue label:active:last-of-type {
+		border-left-color: inherit;
+		border-color: inherit;
+	}
+	
+	/* Grey */
+	.grey {
+		border: 2px solid #6B7A8A;
+		color: #6B7A8A;
+		background-color: white;
+	}
+	.grey:active {
+		border: 2px solid #6B7A8A;
+		color: white;
+		background-color: #6B7A8A;
+	}
+	.grey:hover {
+		border: 2px solid #6B7A8A;
+		color: white;
+		background-color: #6B7A8A;
+	}
+		
+	/* Red */
+	.red {
+		border: 2px solid #FF526B;
+		color: #FF526B;
+		background-color: white;
+	}
+	.red:active {
+		border: 2px solid #FF526B;
+		color: white;
+		background-color: #FF526B;
+	}
+	.red:hover {
+		border: 2px solid #FF526B;
+		color: white;
+		background-color: #FF526B;
+	}
+	.green {
+		border: 2px solid #60C353;
+		color: #60C353;
+		background-color: white;
+	}
+	.green:active {
+		border: 2px solid #60C353;
+		color: white;
+		background-color: #60C353;
+	}
+	.green:hover {
+		border: 2px solid #60C353;
+		color: white;
+		background-color: #60C353;
+	}
+	
+	/* 	----- UI Navigation Settings ----- */
+	
+	.navbar {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		list-style: none;
+		display: flex;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		z-index: 1;
+		background-color: #252525;
+		color: white;
+		max-height: 
+	}
+	
+	/* 	----- UI Object Style Definitions ----- */
+	
+	.UI {
+		font-weight: 500;
+		font-size: smaller;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.UI.segmented label, .UI.button, .UI.search {
+		border: 2px solid;
+		min-height: 32px;
+		min-width: 64px;
+	}
+	.UI.search {
+		-webkit-appearance: none;
+		border-radius: 100px;
+		border-color: #D8D8D8;	
+	}	
+	.UI.segmented {
+		display: flex;
+		border: 0;
+		border-radius: 6px;
+		
+	}
+	.UI.segmented input[type="radio"] {
+		width: 0px;
+		height: 0px;
+		display: none;
+	}
+	.UI.segmented label {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-left: 1px solid;
+		border-right: 1px solid;
+	}
+	.UI.segmented label:first-of-type{
+		border-top-left-radius: 6px;
+		border-bottom-left-radius: 6px;
+		border-left: 2px solid;
+	}
+	.UI.segmented label:last-of-type {
+		border-top-right-radius: 6px;
+		border-bottom-right-radius: 6px;
+		border-right: 2px solid;
+	}
+	.UI.button {
+		border-radius: 6px;
+	}
+
+	/* 	----- UI Item Settings ----- */
+	
+	.item, .itemgroup {
+		border: 1px solid green;
+		margin: 4px;
+		flex: 1;
+	}
+	
+	.item.icon {
+		flex: 0;
+	}
+	
+	.item.icon img, .item.navbutton img {
+		vertical-align: middle;
+		margin-left: 0.5em;
+		margin-right: 0.5em;
+	}
+	
+	.item.small {
+		flex: 0;
+	}
+	
+	.item.large {
+		flex: 2;
+	}
+	
+	.item.x-large {
+		flex: 4;
+	}
+	
+	.item:first-child {
+		margin-left: 0;
+	}
+	
+	.item:last-child {
+		margin-right: 0;
+	}
+	
+	.sidebar .item, .sidebar .itemgroup {
+		margin-left: 16px;
+	}
+	
+	/* 	----- UI Sidebar Settings ----- */
+	
+	.sidebar {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 260px;
+		height: 100vh;
+		background-color: #E8E8EB;
+		z-index: -1;
+		padding-top: 96px;
+	}
+	aside a {
+		line-height: 2em;
+		display: block;
+		margin-left: 16px;
+		border-top: 1px solid #C7C7CC;
+	}	
+	aside a:last-of-type {
+		border-bottom: 1px solid #C7C7CC;
+	}
+	
+	/* 	----- UI Menubar Settings ----- */
+	
+	.menubar {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-wrap: nowrap;
+		margin: 0 auto;
+		align-content: space-between;
+		justify-content: center;
+		background-color: aqua;
+	}
+
+	.menubar .item input {
+		width: 100%;
+	}
+	.menubar .item input[type=search] {
+
+	}
+
+	/* 	----- Page Photo Header Settings ----- */
+	
+	.page {
+		background-color: fuchsia;
+		width: 100%;
+		height: 100vh;
+		padding-top: 96px;
+	}
+	.container {
+		background-color: red;
+		display: block;
+		margin-left: 4em;
+		margin-right: 4em;
+	}
+	
+	/* 	----- UI Module Styling ----- */

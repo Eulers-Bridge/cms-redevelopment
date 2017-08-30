@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Menubar Demo</title>
+		<link href="reset.css" rel="stylesheet" type="text/css">
+		<link href="stylesheet.css" rel="stylesheet" type="text/css">
+		<style type="text/css" media="screen">
+			body {
+				margin:0;
+			}
+			.menubar {
+				width: 100%;
+				height: auto;
+				display: flex;
+				flex-wrap: nowrap;
+				margin: 0 auto;
+				align-content: space-between;
+				justify-content: center;
+			}
+			.item {
+				height: auto;
+				margin: 8px;
+				width: auto;
+			}
+			
+			.item:first-child {
+				margin-left: 0;
+			}
+			
+			.item:last-child {
+				margin-right: 0;
+			}
+			
+			.item.button {
+				flex: 1;
+				flex-shrink: 2;
+			}
+			
+			.item.segmented {
+				flex: 2;
+				flex-shrink: 1;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<nav class="menubar">
+			<div class="item button">
+				<button class="UI button bar blue" ontouchstart="" name="Button">Test</button>
+			</div>
+			<div class="item segmented">
+				<nav class="UI segment" ontouchstart="">
+					<input type="radio" name="seg-1" value="Event Details" id="example1">
+					<label for="example1">Event Details</label>
+					<input type="radio" name="seg-1" value="Volunteering" id="example2">
+					<label for="example2">Volunteering</label>
+				</nav>
+			</div>
+			<div class="item button">
+				<button class="UI button bar green" ontouchstart="" name="Button">Finish</button>
+			</div>
+			<div class="item button">
+				<button class="UI button grey" ontouchstart="" name="Button">Done</button>
+			</div>
+		</nav>
+	</body>
+</html>
