@@ -118,6 +118,20 @@
 	    border: 2px solid #4A90E2;
 	    background-color: #4A90E2;
 	}
+	.blue {
+	    border: 2px solid #4A90E2;
+	    color: #4A90E2;
+	    background-color: white;
+	}
+	button.blue.icon.active {
+	    background-color: #4A90E2;
+	}
+	button.blue.icon:hover {
+	    background-color: #4A90E2;
+	}
+	button.blue.icon:active {
+	    background-color: #4A90E2;
+	}
 	/* Blue Segmented Definitions */
 	
 	.segmented.blue:hover,
@@ -169,6 +183,15 @@
 	    border: 2px solid #6B7A8A;
 	    background-color: #6B7A8A;
 	}
+	button.grey.icon.active {
+	    background-color: #6B7A8A;
+	}
+	button.grey.icon:hover {
+	    background-color: #6B7A8A;
+	}
+	button.grey.icon:active {
+	    background-color: #6B7A8A;
+	}
 	/* Red */
 	
 	.red {
@@ -182,6 +205,15 @@
 	button.red:active {
 	    border: 2px solid #FF526B;
 	    color: white;
+	    background-color: #FF526B;
+	}
+	button.red.icon.active {
+	    background-color: #FF526B;
+	}
+	button.red.icon:hover {
+	    background-color: #FF526B;
+	}
+	button.red.icon:active {
 	    background-color: #FF526B;
 	}
 	/* Green */
@@ -199,6 +231,15 @@
 	    color: white;
 	    background-color: #60C353;
 	}
+	button.green.icon.active {
+	    background-color: #60C353;
+	}
+	button.green.icon:hover {
+	    background-color: #60C353;
+	}
+	button.green.icon:active {
+	    background-color: #60C353;
+	}
 	/* 	----- UI Navigation Settings ----- */
 	
 	.navbar {
@@ -214,6 +255,13 @@
 	    z-index: 1;
 	    background-color: #252525;
 	    color: white;
+	}
+	.navbar { /* Experimental and highly graphics intensive - only add this for the oohs and ahhs. */
+		background-color: rgba(0,0,0,0.75);
+		-webkit-backdrop-filter: blur(30px) brightness(120%) saturate(200%);
+		-moz-backdrop-filter: blur(30px) brightness(120%) saturate(200%);
+		-o-backdrop-filter: blur(30px) brightness(120%) saturate(200%);
+		backdrop-filter: blur(30px) brightness(120%) saturate(200%);
 	}
 	.navbar a {
 	    padding-right: 2em;
@@ -257,6 +305,11 @@
 	    padding-left: 4px;
 	    padding-right: 4px;
 	    text-align: center;
+	    -webkit-transition: 0.1s ease-in-out;
+	    -moz-transition: 0.1s ease-in-out;
+	    -o-transition: 0.1s ease-in-out;
+	    transition: 0.1s ease-in-out;
+
 	}
 	.UI.search {
 	    -webkit-appearance: none;
@@ -305,9 +358,35 @@
 	    border: 0;
 	}
 	.UI.button.icon {
-	    border-radius: 1000px;
+		border: 0;
+		background-color: #d8d8d8;
+	    border-radius: 100px;
 	    min-height: 24px;
 	    min-width: 24px;
+	    max-height: 24px;
+	    max-width: 24px;
+	    background-position: center; 
+		background-repeat: no-repeat;
+	    margin-left: 4px;
+	}
+	.UI.button.icon:active {
+		-webkit-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+		-o-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	
+	.icon.delete{
+		background-image: url(assets/Cross%20Glyph.png);
+	}
+	.icon.info {
+		background-image: url(assets/Info%20Glyph.png);
+	}
+	.icon.tick {
+		background-image: url(assets/Tick%20Glyph.png);
+	}
+	.icon.plus {
+		background-image: url(assets/Plus%20Glyph.png);
 	}
 	/* 	----- UI Edit Fields ----- */
 	
@@ -315,6 +394,9 @@
 	    border: 1px solid #d8d8d8;
 	    border-radius: 6px;
 	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    -o-appearance: none;
+	    appearance: none;
 	    text-align: left;
 	    font-weight: 400;
 	    line-height: 1.2em;
@@ -664,6 +746,7 @@
 	.module_buttongroup {
 	    text-align: right;
 	    margin-left: auto;
+	    
 	}
 	.module li {
 	    display: inline-block;
