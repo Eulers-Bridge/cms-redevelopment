@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>Isegoria Administration - Newsfeed (New)</title>
+	<link href="reset.css" rel="stylesheet" type="text/css">
+	<style media="screen" type="text/css">
+	@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+	</style>
+	<style media="screen" type="text/css">
+	@import url('fonts/MuseoSansRounded.css');
+	</style>
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="nosidebar">
+	<nav class="navbar" role="navigation">
+		<a href="/test/">Drew Smith</a>
+		<img alt="Close" src="assets/nav/close.png" srcset="assets/nav/close@2x.png 2x"><a>Close</a>
+		<a class="navbar_title">Create A Poll</a> 
+		<img alt="Activity" src="assets/nav/activity.png" srcset="assets/nav/activity@2x.png 2x">
+		<img alt="Notifications" src="assets/nav/notifications.png" srcset="assets/nav/notifications@2x.png 2x">
+		<img alt="Create" src="assets/nav/logoff.png" srcset="assets/nav/logoff@2x.png 2x">
+	</nav>
+
+
+	<div class="page">
+		<header class="title_headeraction">
+			<div class="title_text">
+				<input style="width:100%" class="UI editfield subheader" type="text" value="Which party will you vote for in the Australian Federal Election?">
+				<h4>15th July 2018, 12:08pm</h4>
+			</div>
+		</header>
+
+		<div class="page_container">
+			
+		<section class="module poll">
+		
+			<div class="UI separator header">
+				<h3 style="margin-right:auto;">Edit Data</h3>
+				<button class="UI button icon delete red active" name="Button"></button>
+				<button class="UI button icon plus green active" name="Button"></button>
+			</div>
+			
+			<div class="module tablecelllist">
+				<div class="item icon liberal"></div>
+				<input style="width:100%" class="UI editfield listedit" type="text" value="Australian Liberal Party">
+				<small>Verified</small>
+			</div>
+			<div class="module tablecelllist">
+				<div class="item icon labor"></div>
+				<input style="width:100%" class="UI editfield listedit" type="text" value="Australian Labor Party">
+				<small>Verified</small>
+			</div>
+			<div class="module tablecelllist">
+				<div class="item icon greens"></div>
+				<input style="width:100%" class="UI editfield listedit" type="text" value="Greens">
+				<small>Verified</small>
+			</div>
+			<div class="module tablecelllist">
+				<div class="item icon nat"></div>
+				<input style="width:100%" class="UI editfield listedit" type="text" value="Nationals">
+				<small>Verified</small>
+			</div>
+			
+			<div class="module message">
+				<h6>Add another option</h6>
+			</div>
+			
+			<div class="UI separator light">
+				<h6 style="margin-right:auto;">Options</h6>
+			</div>
+			
+			<div class="uigroup flexcol">
+				<div class="row flexrow">
+					<h6 class="row_label">28 days before Poll Expiration</h6>
+					<nav class="UI segmented blue" style="flex:1;">
+						<input id="example1" name="seg-1" type="radio" value="2 Days Before"><label for="example1">+</label>
+						<input id="example2" name="seg-2" type="radio" value="One the Date"><label for="example2">-</label>
+					</nav>
+				</div>
+				<div class="row">
+					<h6 class="row_label">Hide Vote Count</h6>
+					<nav class="UI segmented blue" style="flex:1;">
+						<input id="example1" name="seg-1" type="radio" value="Until Polls Close"><label for="example1">Until Polls Close</label>
+						<input id="example2" name="seg-2" type="radio" value="Always"><label for="example2">Always</label>
+						<input id="example3" name="seg-3" type="radio" value="Never"><label for="example3">Never</label>
+					</nav>
+				</div>
+				<div class="row">
+					<h6 class="row_label">Push Notifications</h6>
+					<nav class="UI segmented blue" style="flex:1;">
+						<input id="example1" name="seg-1" type="radio" value="On"><label for="example1">On</label>
+						<input id="example2" name="seg-2" type="radio" value="Off"><label for="example2">Off</label>
+					</nav>
+				</div>
+			</div>
+			
+			<nav class="menubar" style="margin-bottom: 0;">
+				<div class="item"">
+					<button class="UI button fullheight blue" name="Button">Previous Page</button>
+				</div>
+				<div class="item" style="margin-left: auto;">
+					<button class="UI button fullheight blue" name="Button">Next Page</button>
+				</div>
+			</nav>
+
+		</section>
+		</div>
+	</div>
+</body>
+</html>
